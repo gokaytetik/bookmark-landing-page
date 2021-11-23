@@ -1,0 +1,2 @@
+html{box-sizing:border-box;font-size:100%}*,:after,:before{box-sizing:inherit}body{font-family:var(--font-sans);margin:0;padding:0}.visually-hidden{height:1px;left:-10000px;overflow:hidden;position:absolute;top:auto;width:1px}:root{--alpha:#fff;--font-sans:"Open Sans",sans-serif;--font-rubik:"Rubik",sans-serif}h1,h2,h3{line-height:1.1;margin-top:0}h1{margin-bottom:rem(3)}h1,h2{font-size:rem(24)}h2{margin-bottom:rem(24)}a,a:active,a:visited{text-decoration:none}
+/*# sourceMappingURL=style.css.map */
