@@ -1,0 +1,99 @@
+@use "../util" as *;
+
+.features {
+  &__header-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(35);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 35%;
+
+    h2 {
+      color: var(--beta);
+      margin-bottom: rem(10);
+    }
+
+    p {
+      color: var(--alpha);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(70);
+
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--alpha);
+      font-weight: 600;
+      padding-bottom: rem(20);
+    }
+  }
+  &__panel-wrapper {
+    margin-left: rem(170);
+  }
+  &__tab-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+    img {
+      margin-right: rem(50);
+    }
+  }
+
+  &__tab-text {
+    width: 50%;
+
+    p {
+      width: 70%;
+      margin-bottom: rem(35);
+      color: var(--alpha);
+    }
+
+    h2 {
+      color: var(--beta);
+    }
+  }
+
+  &__tab-panel button {
+    background-color: var(--delta);
+    color: var(--ei);
+    font-weight: 600;
+    padding: rem(15) rem(25);
+    border: solid 2px var(--delta);
+    border-radius: rem(5);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 0.5s ease;
+  }
+
+  &__tab-panel button:hover {
+    background-color: transparent;
+    border: solid 2px var(--delta);
+    color: var(--delta);
+  }
+
+  &__bg {
+    background-color: var(--delta);
+    width: rem(450);
+    height: rem(350);
+    border-radius: 0 50% 50% 0;
+    position: absolute;
+    left: 0;
+    top: 1055px;
+    z-index: -2;
+  }
+}

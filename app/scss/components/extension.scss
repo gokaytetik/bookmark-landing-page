@@ -1,0 +1,77 @@
+@use "../util" as *;
+
+.extension {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: rem(250);
+  color: var(--alpha);
+
+  h2 {
+    color: var(--beta);
+  }
+
+  h3 {
+    color: var(--beta);
+  }
+
+  &__header {
+    width: 30%;
+  }
+  &__card-wrapper {
+    display: flex;
+    align-items: inherit;
+  }
+  &__card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: rem(10);
+    padding: rem(50) rem(40) rem(25);
+    margin-right: rem(40);
+    margin-top: rem(75); // For middle element
+    background-image: url(../../../images/bg-dots.svg);
+    background-repeat: no-repeat;
+    background-position-y: rem(300);
+    background-position: center;
+
+    img {
+      margin-bottom: rem(35);
+    }
+
+    h3 {
+      margin-bottom: rem(20);
+    }
+
+    p {
+      margin-bottom: rem(70);
+    }
+  }
+
+  &__card:first-child {
+    margin-top: 0;
+  }
+  &__card:last-child {
+    margin-right: 0;
+    margin-top: rem(125);
+  }
+
+  button {
+    padding: rem(13) rem(25);
+    border: solid 2px transparent;
+    border-radius: rem(5);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 0.5s ease;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--delta);
+    color: var(--ei);
+  }
+
+  button:hover {
+    background-color: transparent;
+    color: var(--delta);
+    border: solid 2px var(--delta);
+  }
+}

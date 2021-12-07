@@ -1,0 +1,52 @@
+@use "../util" as *;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--delta);
+  color: var(--ei);
+  text-align: center;
+
+  p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: rem(75);
+    margin-bottom: rem(50);
+  }
+
+  h2 {
+    font-size: rem(25);
+    margin-bottom: rem(50);
+  }
+
+  input {
+    padding: rem(13) rem(50) rem(12) rem(13);
+    border-radius: rem(5);
+    border: none;
+  }
+  input::placeholder {
+    color: var(--alpha);
+  }
+
+  button {
+    background-color: var(--gamma);
+    color: var(--ei);
+    font-weight: 600;
+    padding: rem(15) rem(25);
+    border: solid 2px var(--gamma);
+    border-radius: rem(5);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 0.5s ease;
+    margin-bottom: rem(75);
+  }
+
+  button:hover {
+    background-color: var(--ei);
+    border: solid 2px var(--gamma);
+    color: var(--gamma);
+  }
+}

@@ -12,7 +12,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-sans);
+  font-family: var(--font-rubik);
+  line-height: 1.5;
+  font-size: 1rem;
+  background-color: var(--ei);
 }
 
 .visually-hidden {

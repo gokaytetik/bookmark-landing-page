@@ -1,0 +1,47 @@
+@use "../util" as *;
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: var(--beta);
+  font-weight: 500;
+  margin: rem(55) rem(200);
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-item {
+    margin-right: rem(50);
+    letter-spacing: rem(2);
+    font-size: rem(14);
+  }
+  &__menu-item:last-child {
+    margin-right: 0;
+  }
+
+  &__menu button {
+    background-color: var(--gamma);
+    color: var(--ei);
+    padding: rem(13) rem(28);
+    border: solid 2px var(--gamma);
+    border-radius: rem(5);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  &__menu button:hover {
+    background-color: transparent;
+    color: var(--gamma);
+    border: solid 2px var(--gamma);
+  }
+}

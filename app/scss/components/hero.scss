@@ -1,0 +1,73 @@
+@use "../util" as *;
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--alpha);
+  margin: 0 rem(150);
+
+  &__content {
+    width: 30%;
+    margin-left: rem(40);
+  }
+
+  &__content h1 {
+    letter-spacing: rem(1);
+    color: var(--beta);
+    margin-bottom: rem(30);
+    font-weight: 500;
+  }
+
+  &__content p {
+    margin: 0 0 rem(35) 0;
+  }
+
+  &__buttons button {
+    padding: rem(13) rem(25);
+    border: solid 2px transparent;
+    border-radius: rem(5);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 0.5s ease;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &__left-button {
+    background-color: var(--delta);
+    color: var(--ei);
+    margin-right: rem(10);
+  }
+
+  &__left-button:hover {
+    background-color: transparent;
+    color: var(--delta);
+    border: solid 2px var(--delta);
+  }
+
+  &__right-button {
+    color: var(--beta);
+    background-color: #f7f7f7;
+  }
+
+  &__right-button:hover {
+    background-color: transparent;
+    border: solid 2px var(--beta);
+  }
+
+  &__image {
+    margin-top: rem(50);
+  }
+
+  &__bg {
+    background-color: var(--delta);
+    width: rem(450);
+    height: rem(350);
+    border-radius: 0 0 0 50%;
+    position: absolute;
+    right: 0;
+    top: 300px;
+    z-index: -2;
+  }
+}
